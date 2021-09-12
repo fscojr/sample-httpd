@@ -8,6 +8,14 @@ if [[ "$1" == "-h" ]]; then
 	exec /usr/libexec/s2i/usage
 fi
 
+
+if [[ -f python.py ]]; then
+ echo "Movendo arquivo"
+ mv /tmp/src/python.py /tmp/script.py; chmod +x /tmp/script.py
+else
+ echo "Arquivo inexistente"
+fi
+
 echo "---> Copying source files to web server directory..."
 cp -Rf /tmp/src/. /var/www/html/
 
