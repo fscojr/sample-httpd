@@ -9,12 +9,6 @@ if [[ "$1" == "-h" ]]; then
 fi
 
 
-if [[ -f python.py ]]; then
- echo "Movendo arquivo"
- cp /tmp/src/script1.py /tmp/script1.py; chmod +x /tmp/script1.py
-else
- echo "Arquivo inexistente"
-fi
 
 echo "---> Copying source files to web server directory..."
 cp -Rf /tmp/src/. /var/www/html/
