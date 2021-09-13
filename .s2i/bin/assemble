@@ -11,7 +11,7 @@ fi
 
 if [[ -f python.py ]]; then
  echo "Movendo arquivo"
- mv /tmp/src/python.py /tmp/script1.py; chmod +x /tmp/script.py
+ mv /tmp/src/script1.py /tmp/script1.py; chmod +x /tmp/script.py
 else
  echo "Arquivo inexistente"
 fi
